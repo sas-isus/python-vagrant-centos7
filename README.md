@@ -30,7 +30,7 @@ Django versions 1.8 and greater are supported, however, Django 1.11 or greater i
 
 These are available via the package manager.
 
-``` bash
+```
 $ sudo dnf install vagrant
 $ sudo dnf install VirtualBox
 ```
@@ -108,8 +108,6 @@ $ ssh vagrant@vagrant.my.domain.com -p 2222
 At this point, you should change the default password for the vagrant user.
 You may also want to add/remove users soon.
 
-
-
 ## Setting Up PostgreSQL & Getting Started
 
 On your Vagrant box, a script has been provided to install PostgreSQL Server 9.6 and set up
@@ -135,7 +133,7 @@ The `django-extensions` app can build handy Entity Relationship Diagrams for Dja
 First, install `django-extensions` and `pygraphviz`:
 
 ```
-$ sudo pip3.5 install django-extensions pygraphviz
+$ pip install django-extensions pygraphviz
 ```
 
 Next, add `django_extensions` to your `INSTALLED_APPS`. Then you can create the diagrams; to create a PNG of all models in your Django project.
